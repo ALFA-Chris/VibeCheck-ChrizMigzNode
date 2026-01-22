@@ -1,6 +1,4 @@
-# VibeCheck-ChrizMigzNode
-=================================================================
-VIBECHECK 411L (VEGAS DASHBOARD EDITION)
+VibeCheck-ChrizMigzNode
 =================================================================
 
 VibeCheck 411L is a full-stack web application featuring a "Vegas-style" 
