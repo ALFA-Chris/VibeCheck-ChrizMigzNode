@@ -81,6 +81,6 @@ FILE DESCRIPTIONS
 - index.html : The user interface (HTML/CSS).
 - app.js     : The client-side logic that connects buttons to the API.
 
-===============================================================
+
 Created for CPE 411L VibeCheck-ChrizMigzNode
 ===============================================================
