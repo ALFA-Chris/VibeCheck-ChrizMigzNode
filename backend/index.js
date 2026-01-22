@@ -35,7 +35,7 @@ const jokes = [
 
 const vibeMap = {
   happy: { emoji: "😄", message: "Keep going - you're shipping greatness!" },
-  tired: { emoji: "🥱", message: "Hydrate. Stretch. Then commit." },
+  tired: { emoji: "🥱", message: "Hydrate. Stretch. Then commit. COMMIT AH! HINDI MAGCHEAT!" },
   stressed: { emoji: "😵‍💫", message: "Breathe. One bug at a time." },
 };
 
