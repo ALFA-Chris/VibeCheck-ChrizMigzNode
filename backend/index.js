@@ -35,7 +35,7 @@ const jokes = [
 
 const vibeMap = {
   happy: { emoji: "😄", message: "Keep going - you're shipping greatness!" },
-  tired: { emoji: "🥱", message: "Hydrate. Stretch. Then commit. COMMIT AH! HINDI MAGCHEAT!" },
+  tired: { emoji: "🥱", message: "Hydrate. Stretch. Then commit." },
   stressed: { emoji: "😵‍💫", message: "Breathe. One bug at a time." },
 };
 
@@ -86,7 +86,7 @@ app.get("/api/secret", (req, res) => {
   const code = req.query.code;
 
   if (code === "411L") {
-    return res.json({ message: "🎉 Secret unlocked: +10 ka sa langit par!" });
+    return res.json({ message: "🎉 Secret unlocked: +10 luck on your next merge!" });
   }
 
   res.status(403).json({ message: "Nope 😄 Try code=411L" });
