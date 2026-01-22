@@ -1,7 +1,7 @@
 # VibeCheck-ChrizMigzNode
-========================================================================
+=================================================================
 VIBECHECK 411L (VEGAS DASHBOARD EDITION)
-========================================================================
+=================================================================
 
 VibeCheck 411L is a full-stack web application featuring a "Vegas-style" 
 neon dashboard interface. It connects a responsive HTML/CSS frontend to 
@@ -81,6 +81,6 @@ FILE DESCRIPTIONS
 - index.html : The user interface (HTML/CSS).
 - app.js     : The client-side logic that connects buttons to the API.
 
-========================================================================
+===============================================================
 Created for CPE 411L VibeCheck-ChrizMigzNode
-========================================================================
+===============================================================
