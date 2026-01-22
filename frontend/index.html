@@ -189,27 +189,21 @@
   </style>
 </head>
 <body>
+  <h1>VibeCheck 411L</h1>
+  <p>Click buttons. This page will fetch data from your Node.js API.</p>
 
-  <main>
-    <h1>VibeCheck</h1>
-    <p>♣️ ♦️ 411L CASINO ♠️ ♥️</p>
+  <div>
+    <button id="btnFortune">🔮 Fortune</button>
+    <button id="btnJoke">😂 Joke</button>
+    <button data-mood="happy" class="btnMood">😄 Happy</button>
+    <button data-mood="tired" class="btnMood">🥱 Tired</button>
+    <button data-mood="stressed" class="btnMood">😵‍💫 Stressed</button>
+    <button id="btnSmash">💥 SMASH IT PA BABY!</button>
+    <button id="btnSecret">🕵️ Secret</button>
+  </div>
 
-    <div class="button-container">
-      <button id="btnFortune">Jackpot Fortune</button>
-      
-      <button id="btnJoke">😂 Jokerist</button>
-      <button id="btnSecret">🕵️ Secret</button>
-      
-      <button data-mood="happy" class="btnMood">😄 Happy</button>
-      <button data-mood="tired" class="btnMood">🥱 Tired</button>
-      <button data-mood="stressed" class="btnMood">😵‍💫 Stress</button>
-      
-      <button id="btnSmash">💥 ALL IN (SMASH)</button>
-    </div>
-
-    <h2>WINNINGS / OUTPUT</h2>
-    <pre id="out">INSERT COIN TO START...</pre>
-  </main>
+  <h2>Output</h2>
+  <pre id="out">Ready...</pre>
 
   <script src="app.js"></script>
 </body>
