@@ -1,196 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VibeCheck 411L - Dashboard</title>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --bg-color: #0d0015; /* Dark Purple Background */
-      --neon-cyan: #00f3ff;
-      --neon-pink: #ff00ff;
-      --btn-yellow: #ffd700;
-      --btn-red: #ff3333;
-      --btn-green: #00ff00;
-      --text-yellow: #fce803;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: var(--bg-color);
-      color: white;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden; /* Iwas scroll */
-      padding: 0 40px;
-    }
-
-    /* MAIN CONTAINER: Horizontal Strip */
-    .dashboard {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      max-width: 1600px;
-      gap: 30px;
-    }
-
-    /* 1. TITLE SECTION (Left) */
-    .brand-section {
-      text-align: left;
-      flex-shrink: 0;
-    }
-
-    h1 {
-      font-weight: 900;
-      font-size: 3rem;
-      line-height: 1;
-      text-transform: uppercase;
-      color: #fff;
-      text-shadow: 0 0 15px var(--neon-cyan); /* Cyan Glow */
-    }
-    
-    h1 span { display: block; } /* Stacks 411L under VIBECHECK if needed, or inline */
-
-    /* 2. INSTRUCTION TEXT */
-    .instruction-text {
-      color: var(--text-yellow);
-      font-size: 0.8rem;
-      font-weight: 700;
-      max-width: 200px;
-      text-transform: uppercase;
-      line-height: 1.4;
-    }
-
-    /* 3. BUTTON CONTROLS (Center) */
-    .controls {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .row {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-    }
-
-    /* BUTTON STYLES (Pill Shape) */
-    button {
-      border: none;
-      padding: 10px 20px;
-      border-radius: 50px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800;
-      font-size: 0.85rem;
-      cursor: pointer;
-      text-transform: uppercase;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      transition: transform 0.2s, filter 0.2s;
-    }
-    button:active { transform: scale(0.95); }
-    button:hover { filter: brightness(1.2); }
-
-    /* Specific Button Colors based on Image */
-    #btnFortune {
-      background: linear-gradient(90deg, #ffd700, #ffaa00);
-      color: #000;
-      box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-    }
-
-    #btnJoke {
-      background: transparent;
-      border: 2px solid var(--neon-cyan);
-      color: var(--neon-cyan);
-    }
-
-    .btnMood {
-      background: transparent;
-      border: 2px dashed #22c55e;
-      color: #fff;
-    }
-
-    #btnSmash {
-      background: linear-gradient(90deg, #ff0044, #cc0033);
-      color: white;
-      padding: 10px 40px; /* Wider */
-      box-shadow: 0 0 15px rgba(255, 0, 68, 0.6);
-    }
-
-    #btnSecret {
-      background: transparent;
-      border: 2px solid var(--neon-cyan);
-      color: var(--neon-cyan);
-    }
-
-    /* 4. OUTPUT SECTION (Right) */
-    .output-section {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    h2 {
-      font-size: 0.9rem;
-      color: var(--btn-yellow);
-      text-transform: uppercase;
-    }
-
-    pre#out {
-      background: #000;
-      color: var(--btn-yellow);
-      border: 1px solid #333;
-      padding: 15px 25px;
-      border-radius: 10px;
-      font-family: 'JetBrains Mono', monospace;
-      min-width: 200px;
-      text-align: right;
-    }
-
-  </style>
+  <title>VibeCheck 411L</title>
 </head>
 <body>
+  <h1>VibeCheck 411L</h1>
+  <p>Click buttons. This page will fetch data from your Node.js API.</p>
 
-  <div class="dashboard">
-    
-    <div class="brand-section">
-      <h1>VibeCheck<br>411L</h1>
-    </div>
-
-    <div class="instruction-text">
-      Click buttons. This page will fetch data from your Node.js API.
-    </div>
-
-    <div class="controls">
-      <div class="row">
-        <button id="btnFortune">🔮 Fortune</button>
-        <button id="btnJoke">😂 Joke</button>
-        <button data-mood="happy" class="btnMood">😄 Happy</button>
-        <button data-mood="tired" class="btnMood">🥱 Tired</button>
-        <button data-mood="stressed" class="btnMood">😵‍💫 Stressed</button>
-      </div>
-      
-      <div class="row">
-        <button id="btnSmash">💥 SMASH IT PA BABY!</button>
-        <button id="btnSecret">🕵️ Secret</button>
-      </div>
-    </div>
-
-    <div class="output-section">
-      <h2>Output</h2>
-      <pre id="out">Ready...</pre>
-    </div>
-
+  <div>
+    <button id="btnFortune">🔮 Fortune</button>
+    <button id="btnJoke">😂 Joke</button>
+    <button data-mood="happy" class="btnMood">😄 Happy</button>
+    <button data-mood="tired" class="btnMood">🥱 Tired</button>
+    <button data-mood="stressed" class="btnMood">😵‍💫 Stressed</button>
+    <button id="btnSmash">💥 SMASH!</button>
+    <button id="btnSecret">🕵️ Secret</button>
   </div>
+
+  <h2>Output</h2>
+  <pre id="out">Ready...</pre>
 
   <script src="app.js"></script>
 </body>
