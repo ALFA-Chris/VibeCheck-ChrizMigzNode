@@ -86,7 +86,7 @@ app.get("/api/secret", (req, res) => {
   const code = req.query.code;
 
   if (code === "411L") {
-    return res.json({ message: "🎉 Secret unlocked: +10 luck on your next merge!" });
+    return res.json({ message: "🎉 Secret unlocked: +10 ka sa langit par!" });
   }
 
   res.status(403).json({ message: "Nope 😄 Try code=411L" });
